@@ -1,0 +1,72 @@
+body {
+    overflow: hidden; /* Oculta el scroll */
+    background-color: #0056b3;
+    display: flex;
+    align-items: flex-start; /* Cambiar a flex-start para permitir el margen superior */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+.header {
+    background-color: black;
+    padding: 10%;
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    width: 50%;               /* Ocupa la mitad de la pantalla en ancho */
+    height: 100vh;            /* Ocupa el 100% de la altura de la ventana */
+    box-sizing: border-box;    /* Incluye el padding en el ancho y alto */
+    position: fixed;           /* Fija el div en la pantalla */
+    left: 0;                   /* Alinea el div a la izquierda */
+    top: 0;
+}
+
+.form-container {
+    width: 300px; /* Ancho de la caja */
+    padding: 20px; /* Espacio interno */
+    border: 1px solid #ddd; /* Borde de la caja */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de elevación */
+    margin-left: 50%; /* Alinea la caja a la derecha del header */
+    margin-top: 100px; /* Ajusta este valor para bajar el formulario */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    justify-content: center;
+}
+
+.form-container label, .form-container input, .form-container button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: rgb(70, 130, 180);
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 100%;
+}
+
+.gokulogin {
+    width: 100px; /* Ajusta el ancho según sea necesario */
+    height: 20; /* Mantiene la proporción original de la imagen */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}
