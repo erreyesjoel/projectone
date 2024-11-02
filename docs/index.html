@@ -1,16 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="ca">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ProjectOne - Dragon Ball</title>
+        <title>Pàgina de Bola de Drac</title>
         <link rel="stylesheet" href="css/index.css" />
     </head>
     <body>
-        <div class="header">
-            <h1>Welcome to the Dragon Ball Project</h1>
-            <p>This is a static version for GitHub Pages.</p>
-            <img src="imags/gokuindex.png" alt="Goku" />
-        </div>
+        <h1>Pàgina de Bola de Drac</h1>
+        <nav class="login">
+            <a href="logindb.html" class="buttonLogin">Login</a>
+        </nav>
+        <form id="characterForm">
+            <label for="personatge">Quin personatge vols?:</label>
+            <select name="personatge" id="personatge" required>
+                <option class="goku" value="goku">Goku</option>
+                <option class="vegeta" value="vegeta">Vegeta</option>
+                <option class="trunksFuturo" value="trunksFuturo">
+                    Trunks Futuro
+                </option>
+            </select>
+            <button type="submit">Enviar elecció</button>
+        </form>
+
+        <div id="characterInfo"></div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Joel Erreyes. Tots els drets reservats.</p>
+        </footer>
+
+        <script src="index.js"></script>
+        <!-- Enlazar el archivo JavaScript -->
     </body>
 </html>
