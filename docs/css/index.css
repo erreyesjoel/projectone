@@ -27,7 +27,7 @@ body {
 
 footer {
     background-color: rgb(70, 130, 180);
-    padding: 10px;
+    padding: 1%;
     text-align: center;
     color: rgb(255, 255, 255);
     position: fixed;
@@ -42,9 +42,9 @@ footer {
 
 .login {
     position: fixed;
-    top: 0; /* colocarlo arriba */
-    right: 0; /* colocarlo a la derecha del todo */
-    z-index: 10; /* Asegura que el botón esté por encima del header */
+    top: 0%; /* colocarlo arriba */
+    right: 0%; /* colocarlo a la derecha del todo */
+    z-index: 1%; /* Asegura que el botón esté por encima del header */
 }
 .login .buttonLogin {
     display: inline-block;
