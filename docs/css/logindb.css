@@ -97,3 +97,14 @@ footer {
     background-color: darkblue;
     color: white;
 }
+
+.header .fotocontingut img {
+    height: 20px;
+    width: 400px;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+.header .fotocontingut img:hover {
+    background-color: darkblue;
+}

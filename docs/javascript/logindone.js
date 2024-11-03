@@ -14,6 +14,8 @@ if (nom && edat) {
     "<p>No se recibieron datos.</p>";
 }
 
-// Limpiar localStorage después de usar los datos
+/* Limpiar localStorage después de usar los datos, seria como destruir la session si se recarga la pagina, similar a un session destroy de php
 localStorage.removeItem("nom");
 localStorage.removeItem("edat");
+# lo quitamos porque asi si el usuario recarga la pagina, seguira viendo el contenido de su registro, es decir, la session siga activa.
+*/
