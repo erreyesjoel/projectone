@@ -13,11 +13,11 @@ body {
     text-align: center;
     color: white;
     font-size: 150%;
-    width: 50%;               /* Ocupa la mitad de la pantalla en ancho */
-    height: 100vh;            /* Ocupa el 100% de la altura de la ventana */
-    box-sizing: border-box;    /* Incluye el padding en el ancho y alto */
-    position: fixed;           /* Fija el div en la pantalla */
-    left: 0;                   /* Alinea el div a la izquierda */
+    width: 50%; /* Ocupa la mitad de la pantalla en ancho */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    box-sizing: border-box; /* Incluye el padding en el ancho y alto */
+    position: fixed; /* Fija el div en la pantalla */
+    left: 0; /* Alinea el div a la izquierda */
     top: 0;
 }
 
@@ -35,7 +35,9 @@ body {
     justify-content: center;
 }
 
-.form-container label, .form-container input, .form-container button {
+.form-container label,
+.form-container input,
+.form-container button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -69,4 +71,29 @@ footer {
     width: 100px; /* Ajusta el ancho según sea necesario */
     height: 20; /* Mantiene la proporción original de la imagen */
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+.login {
+    position: fixed;
+    top: 0%; /* colocarlo arriba */
+    right: 0%; /* colocarlo a la derecha del todo */
+    z-index: 1%; /* Asegura que el botón esté por encima del header */
+}
+.login .buttonLogin {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.login .buttonLogin:hover {
+    background-color: darkblue;
+    color: white;
 }

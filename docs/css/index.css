@@ -55,6 +55,9 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    margin-right: 10px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .login .buttonLogin:hover {
