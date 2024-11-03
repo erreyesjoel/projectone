@@ -1,7 +1,7 @@
 h1 {
     color: gold;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 body {
@@ -16,10 +16,13 @@ body {
     display: block;
     margin: auto; /* centrado horizontal */
     transition: transform 0.3s ease; /* Transición suave */
+    padding: 1.5%; /* padding 1.5 para que haga un poco de margen vertical entre el mensaje de personaje seleccionado, la foto y la descripcion + sus transformacions*/
 }
 
 .personatge-img:hover {
-    transform: scale(2.2); /* Aumenta el tamaño de la imagen al pasar el ratón */
+    transform: scale(
+        2.2
+    ); /* Aumenta el tamaño de la imagen al pasar el ratón */
 }
 
 footer {
@@ -37,11 +40,11 @@ footer {
     color: red;
 }
 
-.login{
+.login {
     position: fixed;
     top: 0; /* colocarlo arriba */
     right: 0; /* colocarlo a la derecha del todo */
-    z-index: 10;  /* Asegura que el botón esté por encima del header */
+    z-index: 10; /* Asegura que el botón esté por encima del header */
 }
 .login .buttonLogin {
     display: inline-block;
@@ -54,8 +57,18 @@ footer {
     font-weight: bold;
 }
 
-
 .login .buttonLogin:hover {
     background-color: darkblue;
     color: white;
+}
+
+.enviar {
+    border-radius: 2%;
+    border: 2px solid black; /* Borde del input */
+    color: black;
+}
+
+.enviar:hover {
+    background-color: blue; /* Cambia el color de fondo al pasar el ratón */
+    color: white; /* Cambia el color del texto al pasar el ratón */
 }
