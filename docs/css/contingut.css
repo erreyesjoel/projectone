@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    background-color: black; /* Mantén el color de fondo negro */
+    padding: 10px;
+    color: goldenrod;
+    font-size: 150%;
+    position: relative; /* Necesario para el posicionamiento absoluto del icono */
+}
+
+header h1 {
+    text-align: center;
+    flex-grow: 1; /* Expande el h1 para ocupar el espacio disponible */
+}
+
+footer {
+    background-color: black; /* Mantén el color de fondo negro */
+    padding: 10px;
+    text-align: center;
+    color: goldenrod;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 100%;
+}
+
+/* Oculta el menú desplegable inicialmente */
+.menu-dropdown {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 50px; /* Ajusta según la posición deseada */
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 0%; /* para que los valores del desplegable se vean en la izquierda, al darle al clic del menu */
+}
+
+/* Estilos para cada elemento del menú */
+.menu-dropdown li {
+    padding: 3px 7px; /* tamaño de los li, es decir, de los valores del desplegable menu */
+}
+
+.menu-dropdown li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.menu-dropdown li:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para el icono de menú */
+.menu-icon {
+    position: absolute;
+    top: 50%; /* Ajusta la altura para alinearlo verticalmente */
+    transform: translateY(-50%);
+    left: 10px; /* Alinea el icono a la izquierda */
+    cursor: pointer;
+    width: 4%; /* Ajusta el tamaño de la imagen */
+}
+
+.menu-icon:hover {
+    background-color: darkblue;
+}

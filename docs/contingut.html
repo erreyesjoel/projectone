@@ -7,6 +7,26 @@
         <link rel="stylesheet" href="css/contingut.css" />
     </head>
     <body>
-        <h1>Contingut pagina</h1>
+        <header>
+            <h1>Contingut pàgina</h1>
+            <nav class="menu">
+                <!-- Imagen del menú -->
+                <img
+                    src="imags/menu.png"
+                    alt="Menú"
+                    class="menu-icon"
+                    onclick="toggleMenu()"
+                />
+                <!-- Elementos del menú desplegable -->
+                <ul id="menuDropdown" class="menu-dropdown">
+                    <li><a href="inici.html">Inicio</a></li>
+                    <li>
+                        <a href="sagasjuegos.html">Sagas y juegos favoritos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <footer>&COPY; Joel tots els drets reservats</footer>
+        <script src="javascript/menu.js"></script>
     </body>
 </html>
